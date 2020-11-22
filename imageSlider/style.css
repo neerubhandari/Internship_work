@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider img {
+  width: 100%;
+  height: 500px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border: 3px solid black;
+  overflow: hidden;
+  position: relative;
+}
+
+#lastClone {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+}
