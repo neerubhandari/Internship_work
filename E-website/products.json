@@ -1,0 +1,43 @@
+{
+  
+    "items":[
+ {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Paris Jacket",
+          "price": 89.99,
+          "description":"Paris Jacket is a very popular jacket",
+          "image": { "fields": { "file": { 
+          "url": "./img/jacket-1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Paris Jacket",
+          "price": 69.99,
+          "description":"While traditional bomber jackets are leather, the style now also commonly appears in nylon and other materials.",
+          "image": { "fields": { "file": { "url": "./img/jacket-1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Paris Jacket",
+          "price": 16.99,
+          "description":"The style originates from the US Air Force, where it was worn by flight crew members.",
+          "image": { "fields": { "file": { "url": "./img/jacket-1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Paris Jacket",
+          "price": 22.99,
+          "description":"Also known as a flight jacket, a bomber jacket is a short, durable jacket with a zippered front and fitted or elastic waist and cuffs.",
+          "image": { "fields": { "file": { "url": "./img/jacket-1.jpg" } } }
+        }
+      }
+    
+    ]
+  }
