@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/cart.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <!-- Header Start -->
+    <div class="header">
+        <div class="header-top">
+            <ul>
+                     <li>gabooo@mail.com</li>
+                     <li>+12345-678-90</li>
+                <div class="right">
+                     <li><i class="fa fa-facebook"></i></li>
+                     <li><i class="fa fa-twitter"></i></li>
+                     <li><i class="fa fa-google-plus"></i></li>
+                     <li>Login</li>
+                     <li>Register</li>
+                </div>
+            </ul>
+        </div>
+        <div class="header-buttom">
+            <div class="main-nav">
+                 <ul class="main-nav__menu">
+                     <li class="main-nav__menu-item active">Woman</li>
+                     <li class="main-nav__menu-item">Men</li>
+                     <li class="main-nav__menu-item">Children</li>
+                     <li class="main-nav__menu-item">Collection</li>
+                     <li class="logo">gabooo</li>
+                     <li class="main-nav__menu-item">Spring</li>
+                     <li class="main-nav__menu-item">Summer</li>
+                     <li class="main-nav__menu-item">Fall</li>
+                     <li class="main-nav__menu-item">Winter</li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+ <!-- Header End -->
+
+ <!-- Cart-Bar Start -->
+ <div class="cart-bar">
+    <ul>
+             <li>EN</li>
+             <li>USD</li>
+        <div class="right">
+             <li>Shopping Cart</li>
+             <li>WishList</li>
+             <li>Checkout</li>
+             <li>My Account</li>
+             <li class="search"><input type="text" placeholder="Search" ><button type="submit"><i class="fa fa-search"></i></li>
+             <li class="cart"><div class="cart-items">0</div><button type="submit"><i class="fa fa-shopping-cart"></i></button><input type="text1" placeholder="$79.00"></li>
+        </div>
+    </ul>
+</div>
+<!-- Cart-Bar End -->
+
+<!------------------Cart pop Start---------->
+<div class="cart-overlay">
+    <div class="cart-pop">
+        <h3>Your Cart</h3>
+        <div class="cart-content">
+           
+        </div>
+        <h2>total:$</h2>
+        <div class="cart-footer">
+            
+        </div>
+    </div>
+</div>
+<!------------------Cart pop End---------->
+
+<!------Item Description Start------>
+<div class="ItemDescription">
+    <div class="Item-column">
+        <div class="similar-row big">
+            <img src="img/jacket.jpg" alt="">
+        </div>
+        <div class="similar-row">
+            <div class="container">
+                <div class="slides">
+                  <div class="slide">
+                    <div class=" small-slider-column">
+                        <a href="img/jacket.jpg" target="similar-row"><img  class="small" src="img/jacket.jpg" alt=""></a>
+                      <a href="img/jacket-2.jpg" target="similar-row"><img  class="small" src="img/jacket-2.jpg" alt=""></a>
+                       <a href="img/jacket-4.jpg" target="similar-row"> <img  class="small" src="img/jacket-4.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="small-slider-column">
+                        <a href="img/jacket-1.jpg" target="similar-row"><img class="small" src="img/jacket-1.jpg" alt=""></a>
+                        <a href="img/jacket-2.jpg" target="similar-row"><img class="small" src="img/jacket-2.jpg" alt=""></a>
+                        <a href="img/jacket-3.jpg" target="similar-row"><img  class="small" src="img/jacket-3.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.small-slider-column a').click(function(e){
+                    e.preventDefault();
+                    $('.big img').attr("src",$(this).attr("href"));
+                })
+            })
+        </script>
+                </div>
+                <div class="slide-controls">
+                    <button id="prev-btn">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-btn">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <div class="Item-column">
+            <div class="Item-header">
+                <h1>Winter Collection - Paris Jacket</h1>
+                <p class="active">$89.00</p>
+            </div>
+            <div class="feature">
+                <div class="column">
+                    <div class="size">
+                        <ul>
+                        <li onclick="show_hide_size()"><button>SIZE<i class="fas fa-caret-down"></i></button>
+                            <ul class="dropdown" style="display: none;" id ="drop_content_services">
+                                <li>small</li>
+                                <li>large</li>
+                                <li>medium</li>
+                            </ul></li>
+                    </div>
+                </div>
+                <div class="column">
+                    QTY<button>1</button>
+                </div>
+                <div class="column">
+                    <li class="color">COLOR<button class="color">
+                        <div class="foo blue"></div>
+                        <div class="foo purple"></div>
+                        <div class="foo wine"></div>
+                        <div class="foo black"></div>
+                    </button></li>
+                </div>
+                </ul>
+            </div>
+            <div class="button">
+                <button>BUY THIS ITEM</button>
+            </div>
+            <div class="Item-content">
+                <h1>Detail</h1>
+            <div class="Item_description">
+                
+            </div>
+            </div>
+            <div class="Item-button">
+                <table>
+                    <tr>
+                        <th>DELIVERY</th>
+                        <td >+</td>
+                    </tr>
+                    <tr>
+                        <th>STYLE</th>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <th>STYLE</th>
+                        <td>+</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+ </div>
+<!------Item Description End-------->
+
+
+<!------------------Similar Items Start------------->
+<div class="similar-item">
+        <h1>Similar Items</h1>
+        <div class="similar-column">
+                <img src="img/jacket.jpg" alt="">
+                <p>PARIS JACKET</p>
+                <p class="active">$89.99</p>
+        </div>
+        <div class="similar-column">
+           <img src="img/jacket.jpg" alt="">
+           <p>PARIS JACKET</p>
+           <p class="active">$89.99</p>
+        </div>
+        <div class="similar-column">
+           <img src="img/jacket.jpg" alt="">
+           <p>PARIS JACKET</p>
+           <p class="active">$89.99</p>
+        </div>
+        <div class="similar-column">
+           <img src="img/jacket.jpg" alt="">
+           <p>PARIS JACKET</p>
+           <p class="active">$89.99</p>
+        </div>
+</div>
+<!------------------Similar Items End------------->
+
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="footer-column">
+        <ul>
+            <li class="logo">gabooo</li>
+            <li>Fashion is a popular aesthetic expression at a particular 
+                time and place and in a specific context,
+              especially in</li>
+             <li>Created by Graphberry,Belgrade,Serbia
+                &copy2017-<span class="active">Gabooo</span>.Inc
+             </li>
+  
+        </ul>
+    </div>
+    <div class="footer-column">
+        <ul>
+            <li class="main">Links</li>
+            <li>Home</li>
+            <li>Sign In</li>
+            <li>Resgister</li>
+            <li>FAQ</li>
+            <li>Support</li>
+            <li>Terms and Conditions</li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <ul>
+            <li  class="main">Shopping</li>
+            <li>Shopping Cart</li>
+            <li>Winter</li>
+            <li>Spring</li>
+            <li>Summer</li>
+            <li>Fall</li>
+            <li>Collection</li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <div class="footer-header">
+          <li  class="main">Contact Us</li>
+        </div>
+        <div class="footer-content">
+            <p>Get in touch with us via mail phone.We are waiting for yoyr call or message</p>
+        </div>
+        <div class="footer-button">
+            <button>gabooo@mail.com</button>
+        </div>
+        <div class="footer-icon">
+            <ul>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-google-plus"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+<script src="js/script.js"></script>
+<script type="text/html" src="products.json"></script>
+<script type="text/html" src="seller.json"></script>
+<script type="text/javascript" src="js/cart_product.js"></script>
+ </body>
+ </html>

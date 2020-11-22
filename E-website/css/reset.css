@@ -1,0 +1,20 @@
+li {
+  list-style-type: none;
+}
+
+body,
+p,
+a,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+}
+
+button,
+input[type="text"],
+input[type="text1"] {
+  border: none;
+}
