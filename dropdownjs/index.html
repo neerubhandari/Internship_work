@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+ 
+
+    <!-- Header -->
+    <div class="wrapper">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li onclick="show_hide_services()"><i class="fa fa-bars"></i>Services
+            <ul style="display: none;" id ="drop_content_services">
+                <li>Marketing</li>
+                <li>Design</li>
+                <li>Branding</li>
+            </ul>
+        </li >
+        <li>Contact</li>
+        <li onclick="show_hide_language()"><i class="fa fa-bars"></i>Language
+          <ul style="display: none;" id ="drop_content_language">
+            <li>Python</li>
+            <li>JS</li>
+            <li>PHP</li>
+        </ul>
+        </li>
+
+    </ul>
+    </div>
+    
+    <!-- End Header -->
+      
+  </body>
+</html>
